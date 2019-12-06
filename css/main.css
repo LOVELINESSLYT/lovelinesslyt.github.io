@@ -21,7 +21,7 @@ body:before {
 .header {
     background: #fff !important;
 }
-.page-home {
+.container {
     background: #fff !important;
     opacity: 0.8;
 }
