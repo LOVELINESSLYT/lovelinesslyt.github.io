@@ -1,3 +1,43 @@
+/* lin ze custom css start */
+body:before {
+    background: url(https://img2018.cnblogs.com/blog/1889299/201912/1889299-20191205134937226-663850671.png) center/cover no-repeat;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+    -ms-filter: grayscale(40%);
+    -o-filter: grayscale(40%);
+    filter: grayscale(40%);
+    filter: gray;
+}
+.header {
+    background: #fff !important;
+}
+.page-home {
+    background: #fff !important;
+    opacity: 0.8;
+}
+.main {
+    
+}
+.footer {
+    background: #fff !important;
+}
+/* 头像半圆 */
+.site-author-image {
+    border-radius: 50%;
+}
+
+/* lin ze custom css stop */
+
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
