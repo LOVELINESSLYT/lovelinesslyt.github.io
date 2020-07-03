@@ -1,0 +1,31 @@
+{
+  "authorname": "林沢",
+  "authorimg": "/images/nz.jpg",
+  "description": "かわいい",
+  "links": [
+    {
+      "key": "GitHub",
+      "title": "GitHub",
+      "url": "https://github.com/LOVELINESSLYT",
+      "lclass": "fa-github"
+    },
+    {
+      "key": "CSDN",
+      "title": "CSDN",
+      "url": "https://blog.csdn.net/Hack_Different",
+      "lclass": "fa-copyright"
+    },
+    {
+      "key": "CnBlogs",
+      "title": "博客园",
+      "url": "https://www.cnblogs.com/linzes/",
+      "lclass": "fa-rss"
+    },
+    {
+      "key": "LinZe",
+      "title": "林沢の博客",
+      "url": "http://blog.kaxlm6.cn",
+      "lclass": "fa-leaf"
+    }
+  ]
+}

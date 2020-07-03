@@ -1,0 +1,139 @@
+/*隐藏轴*/
+body {
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+}
+/*canvas漂浮, 设置级别*/
+#c_n666 {
+    position: absolute !important;
+    z-index: 1 !important;
+    width: -webkit-fill-available !important;
+}
+
+/*顶部导航自适应*/
+.navbar-fixed-top {
+    padding-top: 15px !important;padding-right: inherit !important;
+}
+
+#searchvals {
+    border-radius: 10px;/*border:1px #FFFFF0 solid;*/opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 70%;text-transform: initial;
+}
+#searchvals::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+#searchvals:focus {
+    /*box-shadow: 0 0 10px #ffffff;outline: none;*/
+    box-shadow: 0 0 0px #ffffff;outline: none;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar{
+    width: 5px;height: 5px;background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    /*灰色渐变*/
+    background-color: #AAA;
+    background-image:
+            -webkit-linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, .2) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(0, 0, 0, .2) 50%,
+                    rgba(0, 0, 0, .2) 75%,
+                    transparent 75%
+            );
+    /*蓝色渐变*/
+    /*background-image:
+            -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.44, rgb(122,153,217)),
+                    color-stop(0.72, rgb(73,125,189)),
+                    !*color-stop(0.86, rgb(28,58,148)),*!
+                    color-stop(0.44, rgb(122,153,217))
+            );*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    border-radius: 10px;box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);background-color: #F5F5F5;
+}
+
+/*动漫语录标签 start*/
+
+.acana {
+    min-height: 100%;cursor: default;
+}
+
+.acmsgs {
+    text-align: center;display: inline-block;width: 100%;/*background: #ffc400;*/
+}
+
+.acmsgs .container {
+    padding: 0px;width: 100%;
+}
+
+.acmsgs .container .row {
+    margin: 0px;
+}
+
+.acmsgs .container .row .col-sm-12 {
+    padding: 0px !important;
+}
+
+.acmsgs .container .row .col-sm-12 p {
+    margin: 15px !important;
+}
+
+.acana .acnames .col-md-4 .media .media-left img {
+    /*min-width: 95px;max-height: 177px;*/
+    width: 127px;height: 177px;
+    max-width: initial;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-image: linear-gradient(#F44336, #03A9F4) 20 20;
+    background-image: -webkit-linear-gradient(top, #F44336 40%, #03A9F4 50%);
+    box-shadow: 3px 3px 8px #03A9F4, -3px -3px 8px #F44336;
+    padding: 1px;
+}
+
+.acana .acnames .col-md-4 {
+    margin-top: 25px;height: 30%;
+}
+
+.acana .acnames {
+    overflow: auto;height: 690px;margin-top: -25px;
+}
+
+.acana .acintros p {
+    height: 144px;font-size: 12px;text-overflow: ellipsis;overflow: hidden;
+}
+
+.acana .media-body .media-heading {
+    color: #FFFFFF !important;font-size: 18px;
+}
+
+.acana .acintros {
+    color: #bdbdbd;
+}
+
+.acana:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.52);
+    content: "";
+}
+
+.acnames::-webkit-scrollbar {
+    width: 3px;
+}
+
+/*动漫语录标签 stop*/
