@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 -->
 <!DOCTYPE html>
-<html lang="en" class="ie9" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>LEMONBLOG</title>
@@ -14,24 +14,59 @@
     <link rel="shortcut icon" href="../static/icon/icon.png">
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/style.css" rel="stylesheet">
+    <link href="css/akome.css" rel="stylesheet">
 </head>
-<style>
-
-</style>
-<body class="banner">
-<div class="banner-caption">
-    <div class="container">
-        <div class="row">
-            <div class="caption-data">
-                <h1>神 の 世 界 へ よ う こ そ</h1>
-                <h3>Scarcity Is The Price Of All Things</h3>
-                <div class="searchvals">
-                    <div class="btn" onclick="window.location.href = '../irasuto'">いらすと</div>
-                    <div class="btn" onclick="window.location.href = '../akome'">アニメ</div>
+<body>
+<section id="acana" class="section pclear secPadding acana">
+    <div class="container no-view" data-animation-effect="fadeIn">
+        <h1 class="title text-center">AC Ana</h1>
+        <div class="acmsgs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>あなたは私の唯一、私はあなたの一人です。 [ 終わりのセラフ ]</p>
+                        <p>你是我的唯一、我是你的之一。 [ 终结的炽天使 ]</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="space"></div>
+        <div class="row acnames">
+            <template v-for="ac in acs">
+                <div class="col-md-4">
+                    <div class="media block-list">
+                        <div class="media-left">
+                            <img v-bind:src="ac.url">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{ac.name}}</h3>
+                            <blockquote class="acintros">
+                                <div v-if="ac.intro == ''">
+                                    <p>在不知什么时候，整个世界被突如其来的未知病毒攻袭，几乎彻底毁灭。但是只有13岁以下的孩子不被病毒所感染，侥幸活了下来。可是这些孩子们却被从地底出现的吸血鬼所统治，并作为提供血液的家畜饲养。故事的主人公[百夜优一郎]和[百夜米迦尔]就是被抓住的孤儿们之一，而面对不堪的命运，他们没有屈服，开始计划逃亡与复仇……</p>
+                                </div>
+                                <div v-else>
+                                    <p>{{ac.intro}}</p>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
     </div>
-</div>
+</section>
 </body>
 </html>
+<!-- JavaScript -->
+<script type="text/javascript" src="../static/plugins/jquery.js"></script>
+<script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/plugins/modernizr.js"></script>
+<script type="text/javascript" src="../static/plugins/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../static/plugins/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="../static/plugins/jquery.appear.js"></script>
+
+<!-- Custom Scripts -->
+<script type="text/javascript" src="../static/js/custom.js"></script>
+<script type="text/javascript" src="../static/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../static/js/vue.js"></script>
+<script type="text/javascript" src="js/akome.js"></script>
