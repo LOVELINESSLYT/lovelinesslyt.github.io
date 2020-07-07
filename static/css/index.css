@@ -1,0 +1,24 @@
+body {
+    background: url('../images/god-wing.webp') no-repeat center;background-size: cover;
+}
+.index {
+    z-index: 999;
+}
+.caption-data {
+    margin-top: 0px;cursor: default;
+}
+.searchvals .btn {
+    margin: 10px;color: #ffffff;padding: 5px;border-radius: 10px;transition: initial;box-shadow: 1px 1px 3px #ffffff, -1px -1px 3px #00000000;
+}
+.searchvals .btn:hover {
+    outline: none;background-color: #00000038;color: #FFC400;box-shadow: 1px 1px 80px #03A9F4, -1px -1px 80px #F44336;
+}
+.god {
+    display: none;
+}
+.canvasanime {
+    display: none;
+}
+#canvas3 {
+    display: none;
+}

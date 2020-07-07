@@ -1,5 +1,11 @@
+html, body {
+    height: initial;
+}
 body {
-
+    background: url(../img/god-akome.webp) no-repeat center;background-size: cover;;
+}
+body:after {
+    position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.52);content: "";
 }
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar{
@@ -41,7 +47,7 @@ body {
 /*动漫语录标签 start*/
 
 .acana {
-    min-height: 100%;cursor: default;background: url(../img/god-akome.webp) no-repeat center;background-size: cover;
+    cursor: default;padding: 70px 0;
 }
 
 .acmsgs {
@@ -89,10 +95,6 @@ body {
 
 .acana .acintros {
     color: #bdbdbd;
-}
-
-.acana:before {
-    position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.52);content: "";
 }
 
 .acana .container {

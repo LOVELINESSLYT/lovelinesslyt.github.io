@@ -6,39 +6,34 @@
   To change this template use File | Settings | File Templates.
 -->
 <!DOCTYPE html>
-<html lang="en" class="ie9" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>LEMONBLOG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="static/icon/icon.png">
     <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/animations.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+    <link href="static/backeffect/rain/r3/thunder.css" rel="stylesheet">
 </head>
-<style>
-    body {
-        background: url('static/images/god-wing.webp') no-repeat center;background-size: cover;
-    }
-    .caption-data {
-        margin-top: 0px;cursor: default;
-    }
-    .searchvals .btn {
-        margin: 10px;color: #ffffff;padding: 5px;border-radius: 10px;transition: initial;box-shadow: 1px 1px 3px #ffffff, -1px -1px 3px #00000000;
-    }
-    .searchvals .btn:hover {
-        outline: none;background-color: #00000038;color: #FFC400;box-shadow: 1px 1px 80px #03A9F4, -1px -1px 80px #F44336;
-    }
-</style>
 <body class="banner">
-<div class="banner-caption">
+<div class="canvasanime">
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+</div>
+<div class="index banner-caption">
     <div class="container">
         <div class="row">
-            <div class="caption-data">
-                <h1>神 の 世 界 へ よ う こ そ</h1>
-                <h3>Scarcity Is The Price Of All Things</h3>
+            <div class="god caption-data">
+                <h1>{{jpana}}</h1>
+                <h3>{{usana}}</h3>
                 <div class="searchvals">
-                    <div class="btn" onclick="window.location.href = 'irasuto'">いらすと</div>
-                    <div class="btn" onclick="window.location.href = 'akome'">アニメ</div>
+                    <template v-for="sv in svs">
+                        <div class="btn" v-on:click="skip(sv.name)">{{sv.text}}</div>
+                    </template>
                 </div>
             </div>
         </div>
@@ -46,3 +41,7 @@
 </div>
 </body>
 </html>
+<script type="text/javascript" src="static/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="static/js/vue.js"></script>
+<script type="text/javascript" src="static/js/index.js"></script>
+<script type="text/javascript" src="static/backeffect/rain/r3/thunder.js"></script>
