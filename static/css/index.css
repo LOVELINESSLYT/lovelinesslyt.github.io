@@ -1,6 +1,9 @@
 body {
     background: url('../images/god-wing.webp') no-repeat center;background-size: cover;
 }
+body a:nth-child(1) {
+    display: none;
+}
 .bannerafter {
     position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.45);content: "";
     /*box-shadow: inset 1px 1px 800px #03a9f426, inset -1px -1px 800px #03a9f426;*/
