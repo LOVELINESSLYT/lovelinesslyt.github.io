@@ -1,3 +1,4 @@
+// init data
 new Vue({
     el: '.index',
     data: {
@@ -22,11 +23,12 @@ new Vue({
 });
 
 // - - - - - - - - - - - - - - - Loading Animation Start - - - - - - - - - - - - - - -
+// loading after init
 $(function () {
     $('.bannerafter').fadeIn(3000);
     $('.cvanimes').fadeIn(1500, x);
 });
-
+// fun x
 function x() {
     // in
     $('.god').fadeIn(1500);
@@ -49,4 +51,4 @@ function x() {
     timerkey();
     // - - - - - - - - - - - - - - - Timing To Hide Stop - - - - - - - - - - - - - - -
 }
-// - - - - - - - - - - - - - - - Loading Animation Start - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - Loading Animation Stop - - - - - - - - - - - - - - -
