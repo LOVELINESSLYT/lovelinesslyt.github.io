@@ -20,22 +20,33 @@ new Vue({
         }
     }
 });
-$('.god').fadeIn("slow");
-// - - - - - - - - - - - - - - - Timing to hide Start - - - - - - - - - - - - - - -
-// autotime, body
-let autoTime;
-let body = document.getElementsByTagName("body")[0];
-// body event
-body.onkeydown = body.onmousemove = body.onclick = body.scrollTop = function () {
-    clearInterval(autoTime);
-    document.getElementsByClassName('god')[0].style.display = 'block';
+
+// - - - - - - - - - - - - - - - Loading Animation Start - - - - - - - - - - - - - - -
+$(function () {
+    $('.bannerafter').fadeIn(3000);
+    $('.cvanimes').fadeIn(1500, x);
+});
+
+function x() {
+    // in
+    $('.god').fadeIn(1500);
+    // - - - - - - - - - - - - - - - Timing To Hide Start - - - - - - - - - - - - - - -
+    // autotime, body
+    let autoTime;
+    let body = document.getElementsByTagName("body")[0];
+    // body event
+    body.onkeydown = body.onmousemove = body.onclick = body.scrollTop = function () {
+        clearInterval(autoTime);
+        $('.god').fadeIn(1500);
+        timerkey();
+    }
+    // timer key
+    function timerkey() {
+        autoTime = setInterval(function () {
+            $('.god').fadeOut(1500);
+        }, 5000);
+    }
     timerkey();
+    // - - - - - - - - - - - - - - - Timing To Hide Stop - - - - - - - - - - - - - - -
 }
-// timer key
-function timerkey() {
-    autoTime = setInterval(function () {
-        document.getElementsByClassName('god')[0].style.display = 'none';
-    }, 5000);
-}
-timerkey();
-// - - - - - - - - - - - - - - - Timing to hide Stop - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - Loading Animation Start - - - - - - - - - - - - - - -

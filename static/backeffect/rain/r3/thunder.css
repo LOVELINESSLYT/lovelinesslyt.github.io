@@ -17,13 +17,13 @@ canvas {
     height: 100%;
 }
 
-body {
+/*body {
     width: 100%;
     height: 100%;
     background-color: #222;
     position: relative;
     z-index: 0;
-}
+}*/
 
 /*body:after {
     content: '';

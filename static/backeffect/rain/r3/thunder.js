@@ -193,6 +193,5 @@ function animloop() {
     animateRain();
     animateLightning();
     requestAnimationFrame(animloop);
-    $('.cvanimes').fadeIn("slow");
 }
 animloop();

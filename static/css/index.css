@@ -1,6 +1,9 @@
 body {
     background: url('../images/god-wing.webp') no-repeat center;background-size: cover;
 }
+.bannerafter {
+    position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.45);content: "";
+}
 .index {
     z-index: 999;
 }
@@ -13,12 +16,6 @@ body {
 .searchvals .btn:hover {
     outline: none;background-color: #00000038;color: #FFC400;box-shadow: 1px 1px 80px #03A9F4, -1px -1px 80px #F44336;
 }
-.god {
-    display: none;
-}
-.cvanimes {
-    display: none;
-}
-#canvas3 {
+.god, .cvanimes, #canvas3, .bannerafter {
     display: none;
 }
