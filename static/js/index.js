@@ -17,7 +17,7 @@ new Vue({
     },
     methods: {
         skip: function (url) {
-            window.location.href = url;
+            // window.location.href = url;
         }
     }
 });
